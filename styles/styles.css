@@ -1,0 +1,467 @@
+:root {
+  --main-font: Roboto;
+  --logo-font: Raleway;
+  --header-color: #212121;
+  --text-color: #757575;
+  --text-accent-color: #ffffff;
+  --accent-color: #2196f3;
+  --button-hover-color: #188ce8;
+  --button-color: #f5f4fa;
+  --footer-color: #2f303a;
+  --frame-border-color: #ececec;
+  --portfolio-frame-color: #eeeeee;
+  --logo-color: #afb1b8;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body {
+  font-family: var(--main-font), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  border-bottom: 1px solid;
+  border-color: var(--frame-border-color);
+}
+
+.banner-container {
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)),
+    url(../images/banner-bckgr.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1600px;
+}
+
+.advantages-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-container {
+  width: 1200px;
+}
+
+.footer-container {
+  display: flex;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.header-container .header-contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.header-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo {
+  font-family: var(--logo-font), sans-serif;
+  color: var(--text-accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.upper-logo {
+  font-family: var(--logo-font), sans-serif;
+  color: var(--header-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-left: auto;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.header-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav {
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--header-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav:hover,
+.nav:focus {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.contact {
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+.slogan {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-accent-color);
+  width: 696px;
+  height: 120px;
+}
+button.order {
+  background-color: var(--accent-color);
+  color: var(--text-accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin: 30px auto 0;
+}
+
+button.order:hover,
+button.order:focus {
+  background-color: var(--button-hover-color);
+  color: var(--text-accent-color);
+}
+
+.advantages {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-color);
+  margin-bottom: 10px;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.main-act-list {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.main-act-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 10px;
+}
+.advantages-item::before {
+  content: '';
+  display: flex;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--button-color);
+  margin-bottom: 30px;
+}
+
+.advantages-item:nth-child(1)::before {
+  background-image: url(../images/Group-1.png);
+  background-position: center;
+}
+.advantages-item:nth-child(2)::before {
+  background-image: url(../images/Group-2.png);
+  background-position: center;
+}
+.advantages-item:nth-child(3)::before {
+  background-image: url(../images/Group-3.png);
+  background-position: center;
+}
+.advantages-item:nth-child(4)::before {
+  background-image: url(../images/Group-4.png);
+  background-position: center;
+}
+
+.header-2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+}
+
+.team-section {
+  background-color: var(--button-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--text-accent-color);
+}
+
+.team-item:not(:last-clild) {
+  margin-right: 30px;
+}
+.hero {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.customers-section {
+  padding-top: 94px;
+}
+
+.address .link {
+  font-style: normal;
+  color: var(--text-accent-color);
+}
+
+.list .filter {
+  background-color: var(--button-color);
+  color: var(--header-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.button.filter {
+  padding: 6px 22px;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+button.filter:hover,
+button.filter:focus {
+  background-color: var(--accent-color);
+  color: var(--text-accent-color);
+  cursor: pointer;
+}
+
+.image {
+  width: 370px;
+  height: 294px;
+}
+
+.project {
+  color: var(--header-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 24px;
+}
+
+.project-class {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  border: 1px solid;
+  border-color: var(--portfolio-frame-color);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+footer,
+.banner {
+  background-color: var(--footer-color);
+}
+
+.header-list-item .current {
+  color: var(--accent-color);
+}
+
+.address .mail-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
+
+address {
+  margin-top: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.social-item {
+  display: flex;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover,
+:focus {
+  background-color: var(--accent-color);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+.social-link:hover .social-icon {
+  fill: var(--text-accent-color);
+}
+.join {
+  display: inline;
+}
