@@ -457,7 +457,7 @@ address {
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: red;
+  fill: var(--logo-color)
 }
 .social-link:hover .social-icon {
   fill: var(--text-accent-color);
