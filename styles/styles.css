@@ -63,13 +63,15 @@ header {
 
 .header-icon{
     width: 16px;
-    height: 12px;
+    height: 16px;
     margin-right: 10px;
     fill: var(--text-color);
 }
 
-.link.contact:hover.header-icon,
-.link.contac:focus.header-icon{
+
+
+.link.contact:hover .header-icon,
+.link.contac:focus .header-icon{
     fill: var(--accent-color);
 }
 
