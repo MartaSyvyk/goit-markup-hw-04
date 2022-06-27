@@ -68,8 +68,8 @@ header {
     fill: var(--text-color);
 }
 
-.header-icon:hover,
-.header-icon:focus{
+.link.contact:hover.header-icon,
+.link.contac:focus.header-icon{
     fill: var(--accent-color);
 }
 
@@ -529,7 +529,8 @@ max-width: 231px;
 .social-icon.footer-icon{
     fill: var(--text-accent-color);
 }
-.social-link:hover .social-icon {
+.social-link:hover .social-icon 
+.social-link:focus .social-icon{
   fill: var(--text-accent-color);
 }
 .join-cont {
