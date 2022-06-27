@@ -70,8 +70,8 @@ header {
 
 
 
-.link.contact:hover .header-icon,
-.link.contac:focus .header-icon{
+.contact:hover .header-icon,
+.contac:focus .header-icon{
     fill: var(--accent-color);
 }
 
@@ -128,6 +128,7 @@ header {
 .header-list-item {
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: baseline;
 }
 
 .header-list-item:not(:last-child) {
