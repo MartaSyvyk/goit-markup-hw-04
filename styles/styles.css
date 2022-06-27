@@ -61,6 +61,18 @@ header {
   border-color: var(--frame-border-color);
 }
 
+.header-icon{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--text-color);
+}
+
+.header-icon:hover,
+.header-icon:focus{
+    fill: var(--accent-color);
+}
+
 .banner-container {
   display: flex;
   padding-top: 200px;
@@ -87,9 +99,17 @@ header {
 
 .footer-container {
   display: flex;
-
   padding-top: 60px;
   padding-bottom: 60px;
+  
+}
+
+.footer-address{
+    padding: 0px;
+    max-width: 231px;
+  
+   
+
 }
 
 .header-container .header-contact-list {
@@ -221,6 +241,7 @@ button.order:focus {
 }
 .join-cont .join{
     color: var(--text-accent-color);
+    margin-bottom: 20px;
 }
 
 .advantages-list {
@@ -243,31 +264,18 @@ button.order:focus {
 .advantages-item:not(:last-child) {
   margin-right: 10px;
 }
-.advantages-item::before {
-  content: '';
-  display: flex;
-  height: 120px;
-  border-radius: 4px;
-  background-color: var(--button-color);
-  margin-bottom: 30px;
-}
 
-.advantages-item:nth-child(1)::before {
-  background-image: url(../images/Group-1.png);
-  background-position: center;
-}
-.advantages-item:nth-child(2)::before {
-  background-image: url(../images/Group-2.png);
-  background-position: center;
-}
-.advantages-item:nth-child(3)::before {
-  background-image: url(../images/Group-3.png);
-  background-position: center;
-}
-.advantages-item:nth-child(4)::before {
-  background-image: url(../images/Group-4.png);
-  background-position: center;
-}
+.advantages-icon{
+    width: 270px;
+    height: 120px;
+display: flex;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--button-color);
+    margin-bottom: 30px;
+    }
+
+
 
 .header-2 {
   font-weight: 700;
@@ -332,9 +340,9 @@ button.order:focus {
     display: flex;
     width: 170px;
     height: 92px;
-    border-color: rgba(175, 177, 184, 1);
+    border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
-    border-width: 1px;
+   
     
     
 }
@@ -458,14 +466,24 @@ footer,
   color: var(--accent-color);
 }
 
-address {
+.address {
+display: flex;
+flex-direction: column;
+max-width: 231px;
   margin-top: 20px;
-}
+  margin-right: 0px;
+  max-width:231px;
+  margin-right: 0;
 
+
+}
 .social-links {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 30px;
+}
+.social-links .footer{
+
 }
 .social-item {
   display: flex;
@@ -498,5 +516,10 @@ address {
   fill: var(--text-accent-color);
 }
 .join-cont {
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  padding: 0px;
+ justify-content: baseline;
+ margin-top: 12px;
 }
