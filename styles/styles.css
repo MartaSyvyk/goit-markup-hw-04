@@ -327,11 +327,21 @@ button.order:focus {
     display: flex;
     align-items: center;
 }
-.customer-item{
+.customer-item .customer-link{
+    display: flex;
     width: 170px;
     height: 92px;
     border-color: rgba(175, 177, 184, 1);
     border-radius: 4px;
+    
+}
+
+.customer-icon{
+    fill: var(--logo-color);
+}
+.customer-link:hover .customer-icon
+.customer-link:focus .customer-icon{
+    fill: var(--accent-color);
 }
 
 .address .link {
