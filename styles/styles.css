@@ -319,28 +319,38 @@ button.order:focus {
   margin-bottom: 16px;
 }
 
-.customers-section {
+.customers-container {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .customers-list{
     display: flex;
     align-items: center;
 }
-.customer-item .customer-link{
+.customer-item {
     display: flex;
     width: 170px;
     height: 92px;
     border-color: rgba(175, 177, 184, 1);
     border-radius: 4px;
     
+    
 }
 
+.customer-item:hover,
+.customer-item:focus{
+    border-color: var(--accent-color);
+
+}
+.customer-item:not(:last-child){
+    margin-right: 30px;
+}
 .customer-icon{
     fill: var(--logo-color);
 }
-.customer-link:hover .customer-icon
-.customer-link:focus .customer-icon{
+.customer-item:hover .customer-icon
+.customer-item:focus .customer-icon{
     fill: var(--accent-color);
 }
 
