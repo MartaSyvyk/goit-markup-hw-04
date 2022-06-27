@@ -487,10 +487,11 @@ max-width: 231px;
 }
 .social-links {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   margin-bottom: 30px;
 }
-.social-links .footer{
+.social-links.footer{
+    justify-content: left;
 
 }
 .social-item {
