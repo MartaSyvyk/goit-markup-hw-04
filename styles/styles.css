@@ -210,7 +210,7 @@ button.order:focus {
   color: var(--text-accent-color);
 }
 
-.advantages {
+.advantages, .join {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
@@ -218,6 +218,9 @@ button.order:focus {
   text-transform: uppercase;
   color: var(--header-color);
   margin-bottom: 10px;
+}
+.join-cont .join{
+    color: var(--text-accent-color);
 }
 
 .advantages-list {
@@ -318,6 +321,17 @@ button.order:focus {
 
 .customers-section {
   padding-top: 94px;
+}
+
+.customers-list{
+    display: flex;
+    align-items: center;
+}
+.customer-item{
+    width: 170px;
+    height: 92px;
+    border-color: rgba(175, 177, 184, 1);
+    border-radius: 4px;
 }
 
 .address .link {
@@ -462,6 +476,6 @@ address {
 .social-link:hover .social-icon {
   fill: var(--text-accent-color);
 }
-.join {
+.join-cont {
   display: inline;
 }
