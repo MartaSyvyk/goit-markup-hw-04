@@ -512,6 +512,7 @@ max-width: 231px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+
 .social-link:hover,
 :focus {
   background-color: var(--accent-color);
@@ -520,6 +521,9 @@ max-width: 231px;
   width: 20px;
   height: 20px;
   fill: var(--logo-color)
+}
+.social-icon.footer-icon{
+    fill: var(--text-accent-color);
 }
 .social-link:hover .social-icon {
   fill: var(--text-accent-color);
