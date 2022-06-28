@@ -71,18 +71,14 @@ header {
 
 
 .header-icon:hover,
-.header-icon:focus{
+.header-icon:focus {
     fill: var(--accent-color);
 }
 
 .banner-container {
-  display: flex;
-  padding-top: 200px;
+    padding-top: 200px;
   padding-bottom: 200px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)),
+   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)),
     url(../images/banner-bckgr.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -189,17 +185,19 @@ header {
   cursor: pointer;
 }
 .contact {
+          display: flex;
+            align-items: center;
   color: var(--text-color);
   font-weight: 500;
   line-height: 1.14;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
 }
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
 }
 .slogan {
+    margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -267,17 +265,20 @@ button.order:focus {
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
-
-.advantages-icon{
-    width: 270px;
-    height: 120px;
-    padding:25px 100px ;
+.icon-container{
 display: flex;
+justify-content: center;
+    align-items: center;
+width: 270px;
     height: 120px;
     border-radius: 4px;
     background-color: var(--button-color);
     margin-bottom: 30px;
-    }
+}
+.advantages-icon{ 
+        width: 70px;
+    height: 70px;
+      }
 
 
 
@@ -466,8 +467,13 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 footer,
 .banner {
   background-color: var(--footer-color);
-}
 
+}
+.banner{
+    max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+}
 .header-list-item .current {
   color: var(--accent-color);
 }
@@ -532,7 +538,7 @@ max-width: 231px;
 .social-icon.footer-icon{
     fill: var(--text-accent-color);
 }
-.social-link:hover .social-icon 
+.social-link:hover .social-icon, 
 .social-link:focus .social-icon{
   fill: var(--text-accent-color);
 }
@@ -541,6 +547,5 @@ max-width: 231px;
   flex-direction: column;
   margin-left: 70px;
   padding: 0px;
- justify-content: baseline;
- margin-top: 12px;
+  padding-top: 15px;
 }
