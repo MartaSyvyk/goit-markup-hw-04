@@ -70,8 +70,8 @@ header {
 
 
 
-.header-icon:hover,
-.header-icon:focus {
+.contact:hover .header-icon,
+.contact:focus .header-icon {
     fill: var(--accent-color);
 }
 
