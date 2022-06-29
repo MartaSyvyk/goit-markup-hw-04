@@ -97,6 +97,7 @@ header {
 
 .footer-container {
   display: flex;
+    align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
   
@@ -543,9 +544,7 @@ max-width: 231px;
   fill: var(--text-accent-color);
 }
 .join-cont {
-  display: flex;
-  flex-direction: column;
-  margin-left: 70px;
+   margin-left: 70px;
   padding: 0px;
-  padding-top: 15px;
+  
 }
